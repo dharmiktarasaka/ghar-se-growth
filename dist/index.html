@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghar Se Growth | Live Online Clarity Workshop by Ranu Patel</title>
+  <meta name="description" content="You already have skills people pay for. Find out which ones — and how to start, from home. In one practical evening with Ranu Patel, map your strengths to a real customer and leave with a 14-day plan.">
+
+  <!-- Google Fonts: Playfair Display (Serif), Plus Jakarta Sans (Clean UI), Caveat (Handwriting Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style id="inline-brand-styles">
+/* ==========================================================================
+   GHAR SE GROWTH - EXACT REFERENCE DESIGN SYSTEM
+   Matched 100% to 'Ghar Se Growth Workshop Landing Page (1).png'
+   ========================================================================== */
+
+/* --- CSS Variables & Design Tokens --- */
+:root {
+  /* Brand Palette */
+  --color-green-dark: #0D3B27;      /* Deep Forest Green for dark sections */
+  --color-green-primary: #124B34;   /* Primary Forest Green for CTAs & headings */
+  --color-green-hover: #195E42;     /* Interactive green hover */
+  --color-green-tint: #E8F2EC;      /* Soft green tint */
+  
+  --color-gold-accent: #C58B30;     /* Warm Amber Gold for italics & accents */
+  --color-gold-dark: #A67020;       /* High-contrast gold for text */
+  --color-gold-light: #F7EEDB;      /* Warm beige/gold card & pill background */
+  --color-gold-glow: rgba(197, 139, 48, 0.3);
+
+  --color-cream-bg: #FAF6EC;        /* Page Main Warm Cream Background */
+  --color-cream-card: #FFFFFF;      /* Clean White Card Surface */
+  --color-cream-border: #EADBCA;    /* Soft warm border */
+  
+  --color-text-main: #252923;       /* Body Text Charcoal */
+  --color-text-muted: #4B5249;      /* Muted Charcoal Text */
+  --color-text-subtle: #6D756A;     /* Subtle Meta Text */
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  /* Shadows & Radius */
+  --shadow-subtle: 0 4px 16px rgba(13, 59, 39, 0.06);
+  --shadow-card: 0 8px 24px rgba(13, 59, 39, 0.08);
+  --shadow-elevated: 0 16px 36px rgba(13, 59, 39, 0.14);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --container-max: 1140px;
+}
+
+/* --- Global Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+/* Eyebrow Label */
+.eyebrow-text {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold-dark);
+  margin-bottom: 12px;
+}
+
+.gold-eyebrow {
+  color: #D4A045;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.site-header {
+  background-color: var(--color-cream-bg);
+  border-bottom: 1px solid var(--color-cream-border);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  height: 52px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.02);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name-top {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-green-primary);
+  line-height: 1.1;
+}
+
+.brand-name-main {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--color-green-primary);
+  line-height: 1;
+}
+
+.brand-tagline {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-gold-dark);
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2.2vw, 32px);
+  list-style: none;
+}
+
+.main-nav a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  color: var(--color-green-primary);
+}
+
+.btn-header-cta {
+  background: var(--color-green-primary);
+  color: #FFFFFF;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(18, 75, 52, 0.25);
+}
+
+.btn-header-cta:hover {
+  background: var(--color-green-hover);
+  transform: translateY(-1px);
+}
+
+.header-cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: var(--color-gold-accent);
+  color: var(--color-green-dark);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  padding: 40px 0 60px 0;
+  background-color: var(--color-cream-bg);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1.12fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 1220px;
+}
+
+.hero-pill-badge {
+  display: inline-block;
+  background-color: #0F3D2A;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 3.6vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0F3D2A;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.hero-title-gold-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  color: #B58237;
+  display: block;
+}
+
+.hero-lead {
+  font-size: 0.96rem;
+  color: #383E36;
+  line-height: 1.6;
+  margin-bottom: 26px;
+  max-width: 480px;
+}
+
+/* 3 Feature Badges */
+.hero-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-mini-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-icon-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(181, 130, 55, 0.25);
+}
+
+.badge-text-2line {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0F3D2A;
+  line-height: 1.25;
+}
+
+/* Hero CTA Button */
+.hero-cta-box {
+  margin-bottom: 12px;
+}
+
+.btn-hero-cta {
+  background: #0F3D2A;
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  padding: 13px 40px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(15, 61, 42, 0.28);
+  transition: all 0.25s ease;
+  min-width: 300px;
+  text-align: center;
+}
+
+.btn-hero-cta:hover {
+  background: #17543A;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 61, 42, 0.38);
+}
+
+.hero-cta-main {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-cta-price {
+  font-size: 0.82rem;
+  color: #E5B263;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.hero-event-meta {
+  font-size: 0.82rem;
+  color: #124B34;
+  font-weight: 600;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.meta-svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: #124B34;
+}
+
+.hero-reassurance-note {
+  font-size: 0.78rem;
+  color: #5B6258;
+  margin-top: 6px;
+}
+
+/* Hero Right Image */
+.hero-col-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+}
+
+.hero-main-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+}
+
+/* ==========================================================================
+   TRUST BAR / REASSURANCE STRIP (Winning PDF Style: Honest & Realistic)
+   ========================================================================== */
+.trust-strip {
+  background: var(--color-green-dark);
+  color: #FFFFFF;
+  padding: 18px 0;
+  border-top: 1px solid rgba(197, 139, 48, 0.25);
+  border-bottom: 1px solid rgba(197, 139, 48, 0.25);
+  box-shadow: 0 4px 16px rgba(13, 59, 39, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #F7EEDB;
+  line-height: 1.35;
+}
+
+.trust-item-text {
+  display: inline-block;
+}
+
+.trust-item strong {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.trust-item-highlight .trust-item-text {
+  color: #FFFFFF;
+}
+
+.trust-item-highlight strong {
+  color: #F1C27D;
+}
+
+.trust-icon-box {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(197, 139, 48, 0.16);
+  border: 1px solid rgba(197, 139, 48, 0.35);
+  border-radius: 10px;
+  flex-shrink: 0;
+  color: #E2AC52;
+}
+
+.trust-icon-box svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+@media (max-width: 992px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-strip {
+    padding: 14px 0;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .trust-item {
+    font-size: 0.82rem;
+    gap: 10px;
+  }
+  .trust-icon-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+  .trust-icon-box svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+/* ==========================================================================
+   SECTION 2: SOUND FAMILIAR?
+   ========================================================================== */
+.section-familiar {
+  padding: 72px 0;
+  background-color: var(--color-cream-bg);
+}
+
+.familiar-top-row {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 32px;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.familiar-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  font-weight: 800;
+  color: var(--color-green-dark);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.familiar-lead {
+  font-size: 1.02rem;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+.stamp-badge-img {
+  max-width: 220px;
+  height: auto;
+  margin-left: auto;
+}
+
+/* 4 Persona Cards Grid */
+.persona-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.persona-card {
+  background: var(--color-cream-card);
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.persona-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.persona-img-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #EEE4D2;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+}
+
+.persona-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.persona-card-body {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.persona-name {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+  margin-bottom: 8px;
+}
+
+.persona-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   SECTION 3: THE REAL STARTING POINT (DARK FOREST GREEN SECTION)
+   ========================================================================== */
+.section-equation {
+  background-color: var(--color-green-dark);
+  color: #FFFFFF;
+  padding: 84px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.vine-decor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.9;
+  max-height: 320px;
+}
+
+.vine-left {
+  left: 0;
+}
+
+.vine-right {
+  right: 0;
+}
+
+.equation-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.equation-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.equation-subheading {
+  color: #F7EEDB;
+}
+
+.equation-lead {
+  font-size: 1.05rem;
+  color: #D2E0D7;
+  max-width: 720px;
+  margin: 0 auto 52px auto;
+  line-height: 1.6;
+}
+
+/* 4-Part Equation Diagram */
+.equation-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.equation-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.equation-circle {
+  width: 72px;
+  height: 72px;
+  background-color: #FAF4E5;
+  border: 3px solid #C58B30;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-green-dark);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.equation-step:hover .equation-circle {
+  transform: scale(1.06);
+}
+
+.eq-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.eq-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.eq-step-sub {
+  font-size: 0.8rem;
+  color: #C2D6C9;
+  line-height: 1.4;
+  max-width: 140px;
+}
+
+.equation-operator {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-gold-accent);
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+   SECTION 4: INSIDE THE WORKSHOP (4 PRACTICAL PARTS)
+   ========================================================================== */
+.section-parts {
+  padding: 80px 0;
+  background-color: var(--color-cream-bg);
+}
+
+.parts-header {
+  margin-bottom: 48px;
+}
+
+.parts-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  font-weight: 800;
+  color: var(--color-green-dark);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.parts-lead {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.part-card {
+  background: var(--color-cream-card);
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.25s ease;
+}
+
+.part-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.part-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.part-digit {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-gold-dark);
+  line-height: 1;
+}
+
+.part-icon-wrap {
+  font-size: 1.6rem;
+}
+
+.part-card-heading {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.part-card-body {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.part-card-footer {
+  background: var(--color-gold-light);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid rgba(197, 139, 48, 0.25);
+}
+
+.footer-tag-label {
+  color: var(--color-gold-dark);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.footer-tag-val {
+  color: var(--color-green-dark);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   SECTION 5: PATHS WE'LL EXPLORE TOGETHER
+   ========================================================================== */
+.section-paths {
+  padding: 64px 0 80px 0;
+  background-color: var(--color-cream-bg);
+}
+
+.paths-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.paths-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 10px;
+}
+
+.paths-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+}
+
+.paths-pills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.path-pill-item {
+  background: var(--color-cream-card);
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-pill);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.path-pill-item:hover {
+  transform: translateX(4px);
+  border-color: var(--color-green-primary);
+}
+
+.path-icon-circ {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.path-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.paths-col-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paths-image-wrapper {
+  position: relative;
+  max-width: 440px;
+}
+
+.paths-badge-stamp {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  max-width: 200px;
+  z-index: 2;
+}
+
+.paths-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* ==========================================================================
+   SECTION 6: YOUR GUIDE (HI, I'M RANU PATEL)
+   ========================================================================== */
+.section-guide {
+  padding: 80px 0;
+  background-color: var(--color-cream-bg);
+}
+
+.guide-container {
+  display: grid;
+  grid-template-columns: 280px 1.2fr 280px;
+  gap: 32px;
+  align-items: center;
+}
+
+.guide-col-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.ranu-collage-img {
+  width: 100%;
+  max-width: 270px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.guide-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 6px;
+}
+
+.guide-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-gold-dark);
+  margin-bottom: 20px;
+}
+
+.guide-bio-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 0.92rem;
+  color: var(--color-text-main);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.guide-cta-row {
+  margin-bottom: 16px;
+}
+
+.btn-linkedin {
+  background: var(--color-green-primary);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-linkedin:hover {
+  background: var(--color-green-hover);
+  transform: translateY(-1px);
+}
+
+.guide-disclaimer {
+  font-size: 0.76rem;
+  color: var(--color-text-subtle);
+  line-height: 1.45;
+}
+
+/* Right Credential Pills */
+.guide-col-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cred-pill-card {
+  background: var(--color-gold-light);
+  border: 1px solid rgba(197, 139, 48, 0.3);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cred-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.cred-text {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-green-dark);
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   SECTION 7: BOTTOM RESERVE SECTION (DARK GREEN)
+   ========================================================================== */
+.section-reserve {
+  background-color: var(--color-green-dark);
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+
+.reserve-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Col 1: Left Inclusions */
+.reserve-col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.reserve-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reserve-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.green-check-icon {
+  width: 22px;
+  height: 22px;
+  background-color: #2F6A4F;
+  border: 1.5px solid #D4A045;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-detail strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #FFFFFF;
+  line-height: 1.3;
+}
+
+.feature-detail span {
+  font-size: 0.82rem;
+  color: #C2D6C9;
+}
+
+/* Col 2: Center Checkout Card */
+.checkout-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  color: var(--color-text-main);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.checkout-brand-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-gold-dark);
+  text-transform: uppercase;
+}
+
+.checkout-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.checkout-price-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.price-val {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+}
+
+.price-gst-sub {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.checkout-meta-line {
+  font-size: 0.82rem;
+  color: var(--color-text-subtle);
+  margin-bottom: 20px;
+}
+
+/* Addon Box */
+.checkout-toolkit-addon {
+  background-color: #FAF4E8;
+  border: 1px dashed var(--color-gold-accent);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.toolkit-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.toolkit-checkbox {
+  margin-top: 3px;
+  accent-color: var(--color-gold-accent);
+}
+
+.toolkit-checkbox-text strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--color-green-dark);
+  margin-bottom: 3px;
+}
+
+.toolkit-checkbox-desc {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  line-height: 1.35;
+}
+
+.btn-checkout-gold {
+  background: linear-gradient(135deg, #CF9738 0%, #B87D20 100%);
+  color: #FFFFFF;
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(184, 125, 32, 0.35);
+  margin-bottom: 18px;
+  transition: all 0.2s ease;
+}
+
+.btn-checkout-gold:hover {
+  background: linear-gradient(135deg, #DFAB4C 0%, #C88D2A 100%);
+  transform: translateY(-2px);
+}
+
+.checkout-trust-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 14px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.c-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.checkout-legal-sub {
+  font-size: 0.72rem;
+  color: var(--color-text-subtle);
+  line-height: 1.4;
+}
+
+/* Col 3: Right "You'll Walk Away With" Card */
+.walkaway-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  color: var(--color-text-main);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.walkaway-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.walkaway-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.walkaway-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.walkaway-icon {
+  width: 34px;
+  height: 34px;
+  background-color: #FAF4E5;
+  border: 1px solid var(--color-gold-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.walkaway-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+}
+
+/* ==========================================================================
+   FAQS MINIMAL & FOOTER
+   ========================================================================== */
+.section-faqs-minimal {
+  padding: 32px 0;
+  background-color: var(--color-cream-bg);
+  border-top: 1px solid var(--color-cream-border);
+}
+
+.faq-summary-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.faq-inline-link {
+  color: var(--color-green-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.site-footer-minimal {
+  background-color: #082417;
+  color: #D2E0D7;
+  padding: 24px 0;
+  font-size: 0.8rem;
+}
+
+.footer-minimal-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links-row {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links-row a {
+  color: #D2E0D7;
+  transition: color 0.2s;
+}
+
+.footer-links-row a:hover {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FLOATING WHATSAPP BUTTON
+   ========================================================================== */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  z-index: 90;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 2px solid #FFFFFF;
+  transition: transform 0.2s ease;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: translateY(-2px);
+}
+
+.floating-wp-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* ==========================================================================
+   CHECKOUT MODAL STYLES
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 59, 39, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.25s ease;
+}
+
+.modal-backdrop.open .modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-gold-light);
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.modal-inner {
+  padding: 36px 32px;
+}
+
+.modal-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-green-primary);
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+}
+
+.modal-subtitle {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--color-cream-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: var(--color-green-primary);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-error {
+  display: none;
+  font-size: 0.75rem;
+  color: #B91C1C;
+  margin-top: 4px;
+}
+
+.form-group.has-error .form-input {
+  border-color: #B91C1C;
+}
+
+.form-group.has-error .form-error {
+  display: block;
+}
+
+/* Batch Selector Cards */
+.batch-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.batch-radio-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1.5px solid var(--color-cream-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  cursor: pointer;
+  background-color: var(--color-cream-bg);
+}
+
+.batch-radio-card input {
+  display: none;
+}
+
+.batch-radio-indicator {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-subtle);
+  flex-shrink: 0;
+}
+
+.batch-radio-card.active {
+  border-color: var(--color-green-primary);
+  background-color: var(--color-green-tint);
+}
+
+.batch-radio-card.active .batch-radio-indicator {
+  border-color: var(--color-green-primary);
+  background-color: var(--color-green-primary);
+  box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+.batch-details strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--color-green-dark);
+}
+
+.batch-tag {
+  font-size: 0.75rem;
+  color: var(--color-gold-dark);
+  font-weight: 700;
+}
+
+/* Checkout Addon Box */
+.checkout-addon-box {
+  background: var(--color-gold-light);
+  border: 1.5px solid var(--color-gold-accent);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.custom-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-box {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--color-gold-accent);
+  border-radius: 4px;
+  background: #FFFFFF;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.custom-checkbox:checked ~ .checkbox-box {
+  background: var(--color-gold-accent);
+}
+
+.custom-checkbox:checked ~ .checkbox-box::after {
+  content: '✓';
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.addon-badge-rec {
+  background: var(--color-gold-dark);
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.addon-desc-text {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-text-main);
+  margin-top: 4px;
+}
+
+/* Price Breakdown Card */
+.price-breakdown-card {
+  background: var(--color-cream-bg);
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.breakdown-divider {
+  height: 1px;
+  background: var(--color-cream-border);
+  margin: 8px 0;
+}
+
+.breakdown-row.total-row {
+  font-size: 1.05rem;
+  color: var(--color-green-dark);
+}
+
+.total-amount {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.modal-security-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+  margin-top: 10px;
+}
+
+/* Confirmation Step */
+.success-screen {
+  padding: 16px 0;
+}
+
+.success-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: var(--color-green-tint);
+  border: 2px solid var(--color-green-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-green-primary);
+  margin: 0 auto 12px auto;
+}
+
+.success-check {
+  width: 32px;
+  height: 32px;
+}
+
+.success-badge {
+  background: var(--color-green-tint);
+  color: var(--color-green-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.success-title {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 6px;
+}
+
+.confirmation-summary-card {
+  background: var(--color-cream-bg);
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.conf-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 0.88rem;
+  border-bottom: 1px dashed var(--color-cream-border);
+}
+
+.conf-item:last-child {
+  border-bottom: none;
+}
+
+/* WhatsApp Join Card */
+.whatsapp-join-card {
+  background: #EBF8F2;
+  border: 1.5px solid #25D366;
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.whatsapp-join-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25D366;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.wp-dot {
+  width: 6px;
+  height: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.whatsapp-join-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #075E54;
+  margin-bottom: 4px;
+}
+
+.whatsapp-join-desc {
+  font-size: 0.84rem;
+  color: var(--color-text-main);
+  margin-bottom: 14px;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.next-steps-guide {
+  background: #FFFFFF;
+  border: 1px solid var(--color-cream-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.next-steps-guide h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-green-dark);
+  margin-bottom: 8px;
+}
+
+.next-steps-guide ol {
+  padding-left: 20px;
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-col-right {
+    order: -1;
+  }
+  
+  .hero-image-wrapper {
+    max-width: 420px;
+  }
+
+  .persona-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paths-container {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .guide-col-visual {
+    order: -1;
+  }
+
+  .reserve-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .familiar-top-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stamp-badge-img {
+    margin-left: 0;
+  }
+
+  .equation-diagram {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .equation-operator {
+    padding-bottom: 0;
+  }
+
+  .persona-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-whatsapp-btn {
+    bottom: 20px;
+    right: 16px;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo-img {
+    height: 38px;
+    max-width: 155px;
+  }
+}
+
+  </style>
+  <link rel="icon" type="image/png" href="/assets/ghar_se_growth_emblem-CVifn5g7.png">
+  <script type="module" crossorigin src="/assets/index-DrU_17B6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D07e_TdV.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Ghar Se Growth">
+        <img src="/assets/ghar_se_growth_horizontal-Cp_tl9Rq.png" alt="Ghar Se Growth - Your Skills. Your Business. Your Next Chapter." class="brand-logo-img">
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#framework">Workshop</a></li>
+          <li><a href="#curriculum">What You'll Learn</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#register" class="btn btn-header-cta open-register-modal" data-open-modal="true" id="headerReserveBtn">
+          <span>Reserve My Seat</span>
+          <span class="header-cta-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Left Column -->
+        <div class="hero-col-left">
+          <div class="hero-pill-badge">
+            LIVE ONLINE CLARITY WORKSHOP
+          </div>
+          <h1 class="hero-title">
+            You Already Have<br>
+            Skills People Pay For.<br>
+            <span class="hero-title-gold-italic">Find Out Which Ones<br>&mdash; And How to Start,<br>From Home.</span>
+          </h1>
+
+          <p class="hero-lead">
+            In one practical evening with Ranu Patel, you'll map your strengths to a real customer, a real problem and a simple service offer &mdash; and leave with a 14-day plan you can act on around your job and family.
+          </p>
+
+          <!-- 3 Feature Badges -->
+          <div class="hero-badges-row">
+            <div class="hero-mini-badge">
+              <img src="data:image/png;base64,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" alt="" class="badge-icon-img" aria-hidden="true">
+              <span class="badge-text-2line">No need to<br>quit your job</span>
+            </div>
+            <div class="hero-mini-badge">
+              <img src="data:image/png;base64,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" alt="" class="badge-icon-img" aria-hidden="true">
+              <span class="badge-text-2line">No shop<br>to rent</span>
+            </div>
+            <div class="hero-mini-badge">
+              <img src="data:image/png;base64,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" alt="" class="badge-icon-img" aria-hidden="true">
+              <span class="badge-text-2line">No heavy<br>investment</span>
+            </div>
+          </div>
+
+          <!-- Hero CTA Area -->
+          <div class="hero-cta-box">
+            <button type="button" class="btn btn-hero-cta open-register-modal" data-open-modal="true" id="heroCtaBtn">
+              <span class="hero-cta-main">Reserve My Workshop Seat &rarr;</span>
+              <span class="hero-cta-price">&#8377;497 + GST</span>
+            </button>
+            <div class="hero-event-meta">
+              <span class="meta-item"><svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> [Date]</span> &bull; 
+              <span class="meta-item"><svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> [Time] IST</span> &bull; 
+              <span class="meta-item"><svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> Live on Zoom</span> &bull; 
+              <span class="meta-item"><svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/><path d="M10 2h4"/></svg> 75&ndash;90 minutes</span>
+            </div>
+            <p class="hero-reassurance-note">
+              Secure checkout. Full payable amount shown before you pay. Honest &amp; realistic &mdash; no income promises.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (Authentic Reference Artwork) -->
+        <div class="hero-col-right">
+          <div class="hero-image-wrapper">
+            <img src="/assets/hero_woman_exact-CHady-Wx.png" alt="Indian woman professional smiling at desk with laptop, notes, and coffee" class="hero-main-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR / REASSURANCE STRIP (Winning PDF Style) -->
+    <section class="trust-strip" aria-label="Key Commitments &amp; Trust">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <span class="trust-item-text">For homemakers, mothers &amp; working women</span>
+          </div>
+
+          <div class="trust-item trust-item-highlight">
+            <div class="trust-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="trust-item-text"><strong>Honest &amp; realistic</strong> &mdash; no income promises</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <span class="trust-item-text">Choose a path that fits your life &amp; hours</span>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="trust-item-text">One live 75&ndash;90 min practical session</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SOUND FAMILIAR? -->
+    <section class="section-familiar" id="about">
+      <div class="container">
+        <div class="familiar-top-row">
+          <div class="familiar-header-left">
+            <span class="eyebrow-text">SOUND FAMILIAR?</span>
+            <h2 class="familiar-title">
+              You want financial independence, but you're not sure where to start.
+            </h2>
+            <p class="familiar-lead">
+              You search &ldquo;earn from home&rdquo; and find a flood &mdash; freelancing, AI tools, reselling, digital marketing and too many offers that feel confusing or risky. Meanwhile, your real strengths sit unused.
+            </p>
+          </div>
+          <div class="familiar-header-right">
+            <img src="/assets/ref_badge_different_stories-B9-tN1pT.png" alt="Different Stories. Same Dream. A More Independent You." class="stamp-badge-img">
+          </div>
+        </div>
+
+        <!-- 4 Persona Cards Grid -->
+        <div class="persona-cards-grid">
+          <!-- Card 1 -->
+          <div class="persona-card">
+            <div class="persona-img-box">
+              <img src="/assets/ref_persona_homemaker-CtjOrnfp.png" alt="The Homemaker" class="persona-img">
+            </div>
+            <div class="persona-card-body">
+              <h3 class="persona-name">The Homemaker</h3>
+              <p class="persona-desc">
+                You run a whole household &mdash; budgets, schedules, people. You want income that's yours, without asking anyone.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="persona-card">
+            <div class="persona-img-box">
+              <img src="/assets/ref_persona_mother-CfDRklML.png" alt="The Mother" class="persona-img">
+            </div>
+            <div class="persona-card-body">
+              <h3 class="persona-name">The Mother</h3>
+              <p class="persona-desc">
+                Your time comes in pieces &mdash; nap times, after 9 pm. You need work that bends around your family, not the other way round.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="persona-card">
+            <div class="persona-img-box">
+              <img src="/assets/ref_persona_worker-DzLwv8FA.png" alt="The Working Woman" class="persona-img">
+            </div>
+            <div class="persona-card-body">
+              <h3 class="persona-name">The Working Woman</h3>
+              <p class="persona-desc">
+                Your salary pays the bills. You want a second stream that's safe to build alongside your job.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="persona-card">
+            <div class="persona-img-box">
+              <img src="/assets/ref_persona_professional-B04rn6Y-.png" alt="The Returning Professional" class="persona-img">
+            </div>
+            <div class="persona-card-body">
+              <h3 class="persona-name">The Returning Professional</h3>
+              <p class="persona-desc">
+                You have a degree and real experience &mdash; but after a break, you're not sure what it's worth or where to begin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE REAL STARTING POINT (DARK FOREST GREEN SECTION) -->
+    <section class="section-equation" id="framework">
+      <img src="/assets/ref_vine_left-DseK8xMP.png" alt="" class="vine-decor vine-left" aria-hidden="true">
+      <img src="/assets/ref_vine_right-ClGrr407.png" alt="" class="vine-decor vine-right" aria-hidden="true">
+
+      <div class="container equation-container text-center">
+        <span class="eyebrow-text gold-eyebrow">THE REAL STARTING POINT</span>
+        <h2 class="equation-title">
+          It isn't another course, tool or trending idea.<br>
+          <span class="equation-subheading">It's matching what you know to someone who needs it.</span>
+        </h2>
+        <p class="equation-lead">
+          Every service business &mdash; tutoring, consulting, freelancing, virtual support &mdash; is built on the same simple equation. The workshop helps you work out yours.
+        </p>
+
+        <!-- 4-Part Equation Diagram -->
+        <div class="equation-diagram">
+          <!-- Step 1 -->
+          <div class="equation-step">
+            <div class="equation-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eq-icon">
+                <path d="M12 22v-9M12 13C12 7 7 3 2 4c0 6 4 10 10 9zm0 0c0-6 5-10 10-9c0 6-4 10-10 9z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4 class="eq-step-title">Your skills</h4>
+            <p class="eq-step-sub">What you know, have done or do well</p>
+          </div>
+
+          <div class="equation-operator">+</div>
+
+          <!-- Step 2 -->
+          <div class="equation-step">
+            <div class="equation-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eq-icon">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4 class="eq-step-title">A specific customer</h4>
+            <p class="eq-step-sub">One kind of person or business</p>
+          </div>
+
+          <div class="equation-operator">+</div>
+
+          <!-- Step 3 -->
+          <div class="equation-step">
+            <div class="equation-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eq-icon">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h4 class="eq-step-title">A real problem</h4>
+            <p class="eq-step-sub">Something they'd pay to have solved</p>
+          </div>
+
+          <div class="equation-operator">=</div>
+
+          <!-- Step 4 -->
+          <div class="equation-step">
+            <div class="equation-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eq-icon">
+                <polyline points="20 12 20 22 4 22 4 12"/>
+                <rect x="2" y="7" width="20" height="5"/>
+                <line x1="12" y1="22" x2="12" y2="7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+            </div>
+            <h4 class="eq-step-title">Your first offer</h4>
+            <p class="eq-step-sub">A clear service you can describe and price</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INSIDE THE WORKSHOP (4 PRACTICAL PARTS) -->
+    <section class="section-parts" id="curriculum">
+      <div class="container">
+        <div class="text-center parts-header">
+          <span class="eyebrow-text">INSIDE THE WORKSHOP</span>
+          <h2 class="parts-title">From vague ideas to a clear starting plan in 4 practical parts</h2>
+          <p class="parts-lead">
+            You won't master every business model in 90 minutes. You will know which one to investigate first &mdash; and exactly what to do next.
+          </p>
+        </div>
+
+        <div class="parts-grid">
+          <!-- Part 01 -->
+          <div class="part-card">
+            <div class="part-card-top">
+              <span class="part-digit">01</span>
+              <span class="part-icon-wrap">🧭</span>
+            </div>
+            <h3 class="part-card-heading">Discover your starting point</h3>
+            <p class="part-card-body">
+              Inventory your knowledge, experience, interests and real available hours. Learn why &ldquo;what's trending&rdquo; is often the wrong place to start.
+            </p>
+            <div class="part-card-footer">
+              <span class="footer-tag-label">⏱️ You leave with:</span>
+              <strong class="footer-tag-val">A shortlist of opportunities that fit you.</strong>
+            </div>
+          </div>
+
+          <!-- Part 02 -->
+          <div class="part-card">
+            <div class="part-card-top">
+              <span class="part-digit">02</span>
+              <span class="part-icon-wrap">🔀</span>
+            </div>
+            <h3 class="part-card-heading">Compare home-based models</h3>
+            <p class="part-card-body">
+              Freelancing, virtual assistance, tutoring, consulting and digital services for Indian or international clients &mdash; what each really asks of you.
+            </p>
+            <div class="part-card-footer">
+              <span class="footer-tag-label">⏱️ You leave with:</span>
+              <strong class="footer-tag-val">A framework to choose your direction.</strong>
+            </div>
+          </div>
+
+          <!-- Part 03 -->
+          <div class="part-card">
+            <div class="part-card-top">
+              <span class="part-digit">03</span>
+              <span class="part-icon-wrap">📄</span>
+            </div>
+            <h3 class="part-card-heading">Turn a skill into an offer</h3>
+            <p class="part-card-body">
+              The difference between having a skill and having something people buy. Pick a customer, name their problem, describe your service and test demand.
+            </p>
+            <div class="part-card-footer">
+              <span class="footer-tag-label">⏱️ You leave with:</span>
+              <strong class="footer-tag-val">A first draft of your service offer.</strong>
+            </div>
+          </div>
+
+          <!-- Part 04 -->
+          <div class="part-card">
+            <div class="part-card-top">
+              <span class="part-digit">04</span>
+              <span class="part-icon-wrap">📈</span>
+            </div>
+            <h3 class="part-card-heading">Your your next 14 days</h3>
+            <p class="part-card-body">
+              How to research potential customers, build a simple sample and start professional outreach &mdash; without spending on ads.
+            </p>
+            <div class="part-card-footer">
+              <span class="footer-tag-label">⏱️ You leave with:</span>
+              <strong class="footer-tag-val">A personal 14-day action plan.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PATHS WE'LL EXPLORE TOGETHER -->
+    <section class="section-paths">
+      <div class="container paths-container">
+        <div class="paths-col-left">
+          <h2 class="paths-title">Paths we'll explore together</h2>
+          <p class="paths-subtitle">
+            You don't need to learn digital marketing or become an influencer. You start from what you already know.
+          </p>
+
+          <div class="paths-pills-list">
+            <div class="path-pill-item">
+              <span class="path-icon-circ">✏️</span>
+              <span class="path-label">Freelancing &amp; professional services</span>
+            </div>
+            <div class="path-pill-item">
+              <span class="path-icon-circ">🎧</span>
+              <span class="path-label">Virtual assistance &amp; business support</span>
+            </div>
+            <div class="path-pill-item">
+              <span class="path-icon-circ">🎓</span>
+              <span class="path-label">Tutoring &amp; training</span>
+            </div>
+            <div class="path-pill-item">
+              <span class="path-icon-circ">🗣️</span>
+              <span class="path-label">Specialised consulting</span>
+            </div>
+            <div class="path-pill-item">
+              <span class="path-icon-circ">💼</span>
+              <span class="path-label">Other suitable models based on your skills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="paths-col-right">
+          <div class="paths-image-wrapper">
+            <img src="/assets/ref_badge_real_opportunities-CJ5YyjPd.png" alt="Different Skills. Real Opportunities. From Home." class="paths-badge-stamp">
+            <img src="/assets/ref_laptop_woman-BWwFBa_C.png" alt="Indian woman working peacefully on laptop" class="paths-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: YOUR GUIDE (HI, I'M RANU PATEL) -->
+    <section class="section-guide" id="mentor">
+      <div class="container guide-container">
+        <!-- Left: Polaroid Collage -->
+        <div class="guide-col-visual">
+          <img src="/assets/ref_ranu_collage-BytoyvPX.png" alt="Ranu Patel - 16+ years experience collage" class="ranu-collage-img">
+        </div>
+
+        <!-- Center: Bio Story -->
+        <div class="guide-col-content">
+          <span class="eyebrow-text">YOUR GUIDE</span>
+          <h2 class="guide-title">Hi, I'm Ranu Patel.</h2>
+          <p class="guide-subtitle">I built my income in the hours that were left over.</p>
+
+          <div class="guide-bio-paragraphs">
+            <p>
+              For more than 16 years I've worked with international clients &mdash; on projects that took me to London, the Philippines and Nepal.
+            </p>
+            <p>
+              I earned through my skills while holding a full-time career, and I kept going through both of my pregnancies. Some weeks that meant client calls after the baby slept.
+            </p>
+            <p>
+              That experience taught me that earning from your skills is rarely about the latest tool. It's about understanding customers, communicating your value, delivering reliably and improving every time.
+            </p>
+            <p>
+              Every woman starts from a different place. My job is to help you see your options clearly and take the first practical step.
+            </p>
+          </div>
+
+          <div class="guide-cta-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+              <span>See my professional profile on LinkedIn</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <p class="guide-disclaimer">
+            Any experience is my own. Your results will depend on your skills, circumstances, market demand and execution.
+          </p>
+        </div>
+
+        <!-- Right: 4 Credential Pills -->
+        <div class="guide-col-credentials">
+          <div class="cred-pill-card">
+            <span class="cred-icon">🛡️</span>
+            <span class="cred-text">16+ years serving international clients</span>
+          </div>
+          <div class="cred-pill-card">
+            <span class="cred-icon">📍</span>
+            <span class="cred-text">Work across London, the Philippines and Nepal</span>
+          </div>
+          <div class="cred-pill-card">
+            <span class="cred-icon">💼</span>
+            <span class="cred-text">Kept earning through a full-time career and two pregnancies</span>
+          </div>
+          <div class="cred-pill-card">
+            <span class="cred-icon">🎖️</span>
+            <span class="cred-text">WordCamp contributor and community mentor</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: BOTTOM "RESERVE YOUR SEAT" + CHECKOUT & INCLUSIONS (DARK GREEN SECTION) -->
+    <section class="section-reserve" id="register">
+      <div class="container reserve-container">
+        <!-- Col 1: Left Inclusions -->
+        <div class="reserve-col-left">
+          <span class="eyebrow-text gold-eyebrow">RESERVE YOUR SEAT</span>
+          <h2 class="reserve-title">Everything you need to leave with a plan</h2>
+
+          <ul class="reserve-features-list">
+            <li>
+              <span class="green-check-icon">✓</span>
+              <div class="feature-detail">
+                <strong>Live online workshop with Ranu</strong>
+                <span>75–90 minutes, with time for your questions</span>
+              </div>
+            </li>
+            <li>
+              <span class="green-check-icon">✓</span>
+              <div class="feature-detail">
+                <strong>Skills-to-opportunity worksheet</strong>
+                <span>See your strengths through a customer's eyes</span>
+              </div>
+            </li>
+            <li>
+              <span class="green-check-icon">✓</span>
+              <div class="feature-detail">
+                <strong>Business model comparison sheet</strong>
+                <span>Time, skill and starting cost, side by side</span>
+              </div>
+            </li>
+            <li>
+              <span class="green-check-icon">✓</span>
+              <div class="feature-detail">
+                <strong>Customer research question guide</strong>
+                <span>What to ask to find out if people will really pay</span>
+              </div>
+            </li>
+            <li>
+              <span class="green-check-icon">✓</span>
+              <div class="feature-detail">
+                <strong>Next-step action planner</strong>
+                <span>Your 14 days after the workshop, mapped out</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Center Checkout Card -->
+        <div class="reserve-col-center">
+          <div class="checkout-card">
+            <div class="checkout-header">
+              <span class="checkout-brand-eyebrow">GHAR SE GROWTH</span>
+              <h3 class="checkout-card-title">CLARITY WORKSHOP</h3>
+              <div class="checkout-price-line">
+                <span class="price-val">₹497</span>
+                <span class="price-gst-sub">+ applicable GST</span>
+              </div>
+              <div class="checkout-meta-line">
+                [Date] &bull; [Time] IST &bull; Live on Zoom &bull; 75–90 min
+              </div>
+            </div>
+
+            <!-- Optional Toolkit Addon Box -->
+            <div class="checkout-toolkit-addon">
+              <label class="toolkit-checkbox-label">
+                <input type="checkbox" id="bottomToolkitCheckbox" class="toolkit-checkbox">
+                <span class="custom-check-box"></span>
+                <span class="toolkit-checkbox-text">
+                  <strong>Yes, add the Starter Toolkit &mdash; ₹297</strong>
+                  <span class="toolkit-checkbox-desc">Pricing calculator, first-prospect list, outreach message examples, customer research template and a 30-day action planner.</span>
+                </span>
+              </label>
+            </div>
+
+            <!-- Golden Button -->
+            <button type="button" class="btn btn-checkout-gold open-register-modal" data-open-modal="true" id="bottomReserveBtn">
+              <span>Reserve My Seat Now</span>
+              <span class="arrow-gold">&rarr;</span>
+            </button>
+
+            <!-- Trust Badges -->
+            <div class="checkout-trust-badges">
+              <div class="c-trust-item">
+                <span class="c-trust-icon">🔒</span>
+                <span>Secure UPI / card checkout</span>
+              </div>
+              <div class="c-trust-item">
+                <span class="c-trust-icon">📄</span>
+                <span>GST invoice</span>
+              </div>
+              <div class="c-trust-item">
+                <span class="c-trust-icon">💬</span>
+                <span>WhatsApp support</span>
+              </div>
+            </div>
+
+            <p class="checkout-legal-sub">
+              Final payable amount, session details and terms are shown before payment.<br>
+              Honest &amp; realistic &mdash; no income promises. Educational workshop &mdash; not a job placement or guaranteed-income program.
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 3: Right "You'll Walk Away With" Card -->
+        <div class="reserve-col-right">
+          <div class="walkaway-card">
+            <h3 class="walkaway-title">You'll Walk Away With</h3>
+            <ul class="walkaway-list">
+              <li>
+                <span class="walkaway-icon">🧭</span>
+                <span class="walkaway-label">Clearer direction</span>
+              </li>
+              <li>
+                <span class="walkaway-icon">🏷️</span>
+                <span class="walkaway-label">A simple offer</span>
+              </li>
+              <li>
+                <span class="walkaway-icon">👣</span>
+                <span class="walkaway-label">Real next steps</span>
+              </li>
+              <li>
+                <span class="walkaway-icon">💡</span>
+                <span class="walkaway-label">More confidence</span>
+              </li>
+              <li>
+                <span class="walkaway-icon">📅</span>
+                <span class="walkaway-label">A 14-day action plan</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FAQS COLLAPSIBLE / MODAL (SUPPORTING ALL ORIGINAL FUNCTIONALITY) -->
+  <section class="section-faqs-minimal" id="faqs">
+    <div class="container text-center">
+      <div class="faq-summary-pill">
+        <span>Have questions before booking?</span>
+        <a href="#faqModal" class="faq-inline-link" id="openFaqModalLink">View Complete FAQs &bull; Refund &bull; Recording Policy &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer-minimal">
+    <div class="container footer-minimal-inner">
+      <div class="footer-left">
+        <strong>GHAR SE GROWTH</strong> &bull; Founded by Ranu Patel &bull; &copy; 2026 All rights reserved.
+      </div>
+      <div class="footer-links-row">
+        <a href="#" id="openTermsLink">Terms &amp; Conditions</a>
+        <a href="#" id="openPrivacyLink">Privacy Policy</a>
+        <a href="#" id="openRefundLink">Refund Policy</a>
+        <a href="#" id="openDisclaimerLink">Earnings Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE WORKSHOP REGISTRATION & GST CHECKOUT MODAL -->
+  <div class="modal-backdrop" id="registrationModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-inner">
+        <!-- MODAL STEP 1: FORM -->
+        <div class="modal-step" id="modalStep1">
+          <div class="modal-header">
+            <span class="modal-badge">RESERVE YOUR WORKSHOP SEAT</span>
+            <h3 class="modal-title">Ghar Se Growth Clarity Workshop</h3>
+            <p class="modal-subtitle">Live online workshop led by Ranu Patel &bull; 75–90 Minutes</p>
+          </div>
+
+          <form id="registrationForm" class="checkout-form" novalidate>
+            <!-- Batch Selection -->
+            <div class="form-group">
+              <label class="form-label">Select Your Preferred Live Batch:</label>
+              <div class="batch-selector">
+                <label class="batch-radio-card active">
+                  <input type="radio" name="batchSlot" value="Saturday 11:00 AM IST" checked>
+                  <span class="batch-radio-indicator"></span>
+                  <span class="batch-details">
+                    <strong>Saturday &bull; 11:00 AM – 12:30 PM IST</strong>
+                    <span class="batch-tag fast-filling">Fast Filling &bull; 19 Seats Left</span>
+                  </span>
+                </label>
+                <label class="batch-radio-card">
+                  <input type="radio" name="batchSlot" value="Sunday 4:00 PM IST">
+                  <span class="batch-radio-indicator"></span>
+                  <span class="batch-details">
+                    <strong>Sunday &bull; 4:00 PM – 5:30 PM IST</strong>
+                    <span class="batch-tag">Weekend Afternoon Batch</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Attendee Details -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userName" class="form-label">Full Name *</label>
+                <input type="text" id="userName" class="form-input" placeholder="e.g. Priya Sharma" required>
+                <span class="form-error" id="nameError">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="userWhatsapp" class="form-label">WhatsApp Number *</label>
+                <input type="tel" id="userWhatsapp" class="form-input" placeholder="e.g. 98765 43210" required>
+                <span class="form-error" id="phoneError">Please enter a valid 10-digit number</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail" class="form-label">Email Address (for Zoom link &amp; worksheets) *</label>
+              <input type="email" id="userEmail" class="form-input" placeholder="e.g. priya@example.com" required>
+              <span class="form-error" id="emailError">Please enter a valid email</span>
+            </div>
+
+            <!-- Checkout Addon Box in Modal -->
+            <div class="checkout-addon-box">
+              <label class="custom-checkbox-label">
+                <input type="checkbox" id="modalToolkitAddon" class="custom-checkbox">
+                <span class="checkbox-box"></span>
+                <span class="checkbox-text">
+                  <span class="addon-badge-rec">RECOMMENDED</span>
+                  <strong>Add the Ghar Se Growth Starter Toolkit (+₹297)</strong>
+                  <span class="addon-desc-text">Includes pricing calculator, first-prospect list, outreach message examples, customer research template and a 30-day action planner.</span>
+                </span>
+              </label>
+            </div>
+
+            <!-- Price Breakdown with GST -->
+            <div class="price-breakdown-card">
+              <div class="breakdown-row">
+                <span>Workshop Seat Fee</span>
+                <span id="seatBasePrice">₹497.00</span>
+              </div>
+              <div class="breakdown-row" id="toolkitBreakdownRow" style="display: none;">
+                <span>Starter Toolkit Add-on</span>
+                <span id="toolkitBasePrice">₹297.00</span>
+              </div>
+              <div class="breakdown-row">
+                <span>Subtotal</span>
+                <span id="subtotalDisplay">₹497.00</span>
+              </div>
+              <div class="breakdown-row gst-row">
+                <span>Applicable GST (18%)</span>
+                <span id="gstDisplay">₹89.46</span>
+              </div>
+              <div class="breakdown-divider"></div>
+              <div class="breakdown-row total-row">
+                <strong>Total Payable Amount</strong>
+                <strong class="total-amount" id="totalPayableDisplay">₹586.46</strong>
+              </div>
+            </div>
+
+            <div class="modal-actions">
+              <button type="submit" class="btn btn-hero-cta btn-block" id="proceedToPayBtn">
+                <span>PROCEED TO COMPLETE PAYMENT &rarr;</span>
+              </button>
+            </div>
+
+            <div class="modal-security-note">
+              <span>🔒 256-Bit SSL Encrypted &bull; Instant WhatsApp Confirmation &bull; 100% Educational</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- MODAL STEP 2: CONFIRMATION & WHATSAPP JOIN -->
+        <div class="modal-step" id="modalStep2" style="display: none;">
+          <div class="success-screen text-center">
+            <div class="success-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" class="success-check" stroke="currentColor" stroke-width="3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="success-badge">Seat Confirmed!</span>
+            <h3 class="success-title">Welcome to Ghar Se Growth</h3>
+            <p class="success-lead">
+              Congratulations <strong id="confirmedUserName">Priya</strong>! Your workshop registration has been received.
+            </p>
+
+            <div class="confirmation-summary-card">
+              <div class="conf-item">
+                <span class="conf-label">Live Session:</span>
+                <span class="conf-val" id="confirmedBatch">Saturday &bull; 11:00 AM – 12:30 PM IST</span>
+              </div>
+              <div class="conf-item">
+                <span class="conf-label">Amount Paid:</span>
+                <span class="conf-val" id="confirmedAmount">₹586.46 (incl. GST)</span>
+              </div>
+              <div class="conf-item">
+                <span class="conf-label">Toolkit Included:</span>
+                <span class="conf-val" id="confirmedToolkit">No (Workshop Only)</span>
+              </div>
+            </div>
+
+            <!-- Manual WhatsApp Group Join Card -->
+            <div class="whatsapp-join-card">
+              <div class="whatsapp-join-badge">
+                <span class="wp-dot"></span>
+                <span>ATTENDEES COMMUNITY</span>
+              </div>
+              <h4 class="whatsapp-join-title">Join Workshop WhatsApp Group</h4>
+              <p class="whatsapp-join-desc">
+                Click below to join our private attendees group to receive session reminders, Zoom links, and direct worksheets.
+              </p>
+              <a href="https://chat.whatsapp.com/invite" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block" id="modalJoinWpBtn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-btn-icon" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.47C16.32 14.34 15.1 13.74 14.88 13.66C14.65 13.57 14.49 13.53 14.32 13.78C14.16 14.03 13.69 14.58 13.54 14.75C13.4 14.91 13.25 14.93 13 14.81C12.75 14.68 11.71 14.34 10.47 13.24C9.5 12.38 8.85 11.31 8.72 11.06C8.59 10.81 8.71 10.68 8.83 10.55C8.94 10.44 9.08 10.26 9.2 10.12C9.33 9.98 9.37 9.88 9.45 9.71C9.53 9.55 9.49 9.4 9.43 9.28C9.37 9.15 8.88 7.94 8.67 7.45C8.47 6.97 8.27 7.03 8.12 7.03C7.97 7.02 7.81 7.02 7.65 7.02C7.48 7.02 7.21 7.08 6.98 7.33C6.75 7.58 6.1 8.19 6.1 9.43C6.1 10.67 7 11.87 7.13 12.04C7.25 12.2 8.91 14.77 11.45 15.86C12.05 16.12 12.52 16.28 12.89 16.4C13.5 16.59 14.05 16.56 14.49 16.5C14.98 16.42 16 15.88 16.22 15.26C16.45 14.65 16.45 14.12 16.38 14.01C16.32 13.9 16.17 13.84 15.92 13.71L16.57 14.47Z"/>
+                </svg>
+                <span>Join into the WhatsApp Group &rarr;</span>
+              </a>
+            </div>
+
+            <div class="next-steps-guide text-left">
+              <h4>What happens next?</h4>
+              <ol>
+                <li>Click the button above to join the WhatsApp group immediately.</li>
+                <li>Check your WhatsApp and email for confirmation and calendar invite.</li>
+                <li>Download your <em>Skills-to-Opportunity Worksheet</em> sent to your email.</li>
+                <li>Join the Zoom room 5 minutes prior to start time on Saturday.</li>
+              </ol>
+            </div>
+
+            <button type="button" class="btn btn-secondary btn-block" id="closeSuccessBtn">
+              Done &bull; Return to Website
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGAL INFO POPUP MODAL -->
+  <div class="modal-backdrop" id="legalModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog legal-dialog">
+      <button type="button" class="modal-close-btn" id="legalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-inner">
+        <h3 id="legalModalTitle" class="legal-title">Terms &amp; Policies</h3>
+        <div id="legalModalContent" class="legal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP QUICK BUTTON -->
+  <a href="https://chat.whatsapp.com/invite" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" id="floatingWpBtn" aria-label="Join into WhatsApp group">
+    <svg viewBox="0 0 24 24" fill="currentColor" class="floating-wp-icon" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.47C16.32 14.34 15.1 13.74 14.88 13.66C14.65 13.57 14.49 13.53 14.32 13.78C14.16 14.03 13.69 14.58 13.54 14.75C13.4 14.91 13.25 14.93 13 14.81C12.75 14.68 11.71 14.34 10.47 13.24C9.5 12.38 8.85 11.31 8.72 11.06C8.59 10.81 8.71 10.68 8.83 10.55C8.94 10.44 9.08 10.26 9.2 10.12C9.33 9.98 9.37 9.88 9.45 9.71C9.53 9.55 9.49 9.4 9.43 9.28C9.37 9.15 8.88 7.94 8.67 7.45C8.47 6.97 8.27 7.03 8.12 7.03C7.97 7.02 7.81 7.02 7.65 7.02C7.48 7.02 7.21 7.08 6.98 7.33C6.75 7.58 6.1 8.19 6.1 9.43C6.1 10.67 7 11.87 7.13 12.04C7.25 12.2 8.91 14.77 11.45 15.86C12.05 16.12 12.52 16.28 12.89 16.4C13.5 16.59 14.05 16.56 14.49 16.5C14.98 16.42 16 15.88 16.22 15.26C16.45 14.65 16.45 14.12 16.38 14.01C16.32 13.9 16.17 13.84 15.92 13.71L16.57 14.47Z"/>
+    </svg>
+    <span class="floating-wp-label">Join WhatsApp</span>
+  </a>
+
+</body>
+</html>
